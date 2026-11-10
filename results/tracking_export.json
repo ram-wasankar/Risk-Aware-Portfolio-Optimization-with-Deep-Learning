@@ -1,0 +1,163 @@
+[
+  {
+    "name": "parent",
+    "run_id": "7a511eb9d92d49dd97fb9cdf28c9c936",
+    "status": "FINISHED",
+    "params": {
+      "xgb_depth": "3",
+      "xgb_estimators": "80",
+      "turnover_limit": "0.3",
+      "seed": "20261110",
+      "risk_weight": "0.6",
+      "cvar_limit": "0.06",
+      "cost_bps": "5",
+      "learning_rate": "0.005",
+      "lookback": "12",
+      "epochs": "18",
+      "dataset_sha256": "6ccf423c973bdac1fda6e3fc31200910598c75238fc1c69fb5aef231d1103309",
+      "folds": "3",
+      "horizon": "5",
+      "cvar_alpha": "0.95"
+    },
+    "metrics": {},
+    "artifacts": [
+      "daily_returns.csv",
+      "forecasts.csv",
+      "metrics.json",
+      "weights.json"
+    ]
+  },
+  {
+    "name": "equal_weight",
+    "run_id": "94c91f224f0e421ba7463360c95525a6",
+    "status": "FINISHED",
+    "params": {
+      "strategy": "equal_weight"
+    },
+    "metrics": {
+      "solver_fallbacks": 0.0,
+      "annualized_volatility": 0.08345747977085535,
+      "net_return": 0.008471408621422594,
+      "max_drawdown": -0.05936202766878307,
+      "rebalances": 48.0,
+      "annualized_sharpe": 0.14769644592966893,
+      "mean_l1_turnover": 0.010550678039925654,
+      "cumulative_fee_fractions": 0.0002532162729582157
+    },
+    "artifacts": []
+  },
+  {
+    "name": "xgboost",
+    "run_id": "55efe60386954e82ab5778dabf884f52",
+    "status": "FINISHED",
+    "params": {
+      "strategy": "xgboost"
+    },
+    "metrics": {
+      "solver_fallbacks": 0.0,
+      "annualized_volatility": 0.05260090695761335,
+      "net_return": 0.03371064428000037,
+      "max_drawdown": -0.030052818601087328,
+      "rebalances": 48.0,
+      "annualized_sharpe": 0.6880608492718754,
+      "mean_l1_turnover": 0.23666551369436895,
+      "cumulative_fee_fractions": 0.005679972328664854
+    },
+    "artifacts": []
+  },
+  {
+    "name": "lstm",
+    "run_id": "a5f816ec285344c49eb293192c94a814",
+    "status": "FINISHED",
+    "params": {
+      "strategy": "lstm"
+    },
+    "metrics": {
+      "solver_fallbacks": 0.0,
+      "annualized_volatility": 0.048623183926369815,
+      "net_return": 0.02502958693362234,
+      "max_drawdown": -0.041033640103843805,
+      "rebalances": 48.0,
+      "annualized_sharpe": 0.5580877492005055,
+      "mean_l1_turnover": 0.10885828816378419,
+      "cumulative_fee_fractions": 0.002612598915930821
+    },
+    "artifacts": []
+  },
+  {
+    "name": "transformer",
+    "run_id": "6de9a00b32f34febbd85bb4eea71811e",
+    "status": "FINISHED",
+    "params": {
+      "strategy": "transformer"
+    },
+    "metrics": {
+      "solver_fallbacks": 0.0,
+      "annualized_volatility": 0.04974435389887307,
+      "net_return": 0.04647622097403059,
+      "max_drawdown": -0.029869744680942723,
+      "rebalances": 48.0,
+      "annualized_sharpe": 0.9837644135922442,
+      "mean_l1_turnover": 0.15246273214073033,
+      "cumulative_fee_fractions": 0.003659105571377528
+    },
+    "artifacts": []
+  },
+  {
+    "name": "xgboost_no_cvar",
+    "run_id": "649c8a294e9945f497cfa81a03206d22",
+    "status": "FINISHED",
+    "params": {
+      "strategy": "xgboost_no_cvar"
+    },
+    "metrics": {
+      "solver_fallbacks": 0.0,
+      "annualized_volatility": 0.09582181206845626,
+      "net_return": 0.024683529836763807,
+      "max_drawdown": -0.05618913446604057,
+      "rebalances": 48.0,
+      "annualized_sharpe": 0.3149209967640053,
+      "mean_l1_turnover": 0.2590240787302987,
+      "cumulative_fee_fractions": 0.006216577889527168
+    },
+    "artifacts": []
+  },
+  {
+    "name": "xgboost_no_turnover",
+    "run_id": "b68de79c6b16476786d431d760e48548",
+    "status": "FINISHED",
+    "params": {
+      "strategy": "xgboost_no_turnover"
+    },
+    "metrics": {
+      "solver_fallbacks": 0.0,
+      "annualized_volatility": 0.05091110659023025,
+      "net_return": 0.03335257432176708,
+      "max_drawdown": -0.02729214853929607,
+      "rebalances": 48.0,
+      "annualized_sharpe": 0.702052866988421,
+      "mean_l1_turnover": 0.33737196218223103,
+      "cumulative_fee_fractions": 0.008096927092373545
+    },
+    "artifacts": []
+  },
+  {
+    "name": "xgboost_flat_vol",
+    "run_id": "702acde363374ee69ed7caad94527ce9",
+    "status": "FINISHED",
+    "params": {
+      "strategy": "xgboost_flat_vol"
+    },
+    "metrics": {
+      "solver_fallbacks": 0.0,
+      "annualized_volatility": 0.07533261068256489,
+      "net_return": 0.028986351554935563,
+      "max_drawdown": -0.06114195581737636,
+      "rebalances": 48.0,
+      "annualized_sharpe": 0.4358421047358381,
+      "mean_l1_turnover": 0.2463171423756714,
+      "cumulative_fee_fractions": 0.005911611417016114
+    },
+    "artifacts": []
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "command": "python -m unittest discover -s tests -v",
+  "python": "3.12.14",
+  "tests": 14,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "scope": "Unit tests plus saved forecast/backtest/MLflow artifact reconciliation; synthetic market data",
+  "log": "test_base_strategy_trace_constraints (test_artifacts.ArtifactTests.test_base_strategy_trace_constraints) ... ok\ntest_saved_returns_reconcile_to_metrics (test_artifacts.ArtifactTests.test_saved_returns_reconcile_to_metrics) ... ok\ntest_tracking_export_reconciles (test_artifacts.ArtifactTests.test_tracking_export_reconciles) ... ok\ntest_cost_reduces_wealth_and_weights_drift (test_research.ResearchTests.test_cost_reduces_wealth_and_weights_drift) ... ok\ntest_cvar_discrete_tail (test_research.ResearchTests.test_cvar_discrete_tail) ... ok\ntest_drawdown_includes_initial_wealth (test_research.ResearchTests.test_drawdown_includes_initial_wealth) ... ok\ntest_future_changes_cannot_change_past_features (test_research.ResearchTests.test_future_changes_cannot_change_past_features) ... ok\ntest_infeasible_cvar_retains_holdings_and_reports_failure (test_research.ResearchTests.test_infeasible_cvar_retains_holdings_and_reports_failure) ... ok\ntest_optimizer_respects_exposures_and_turnover (test_research.ResearchTests.test_optimizer_respects_exposures_and_turnover) ... ok\ntest_purge_removes_overlapping_labels (test_research.ResearchTests.test_purge_removes_overlapping_labels) ... ok\ntest_scenario_means_and_volatility_match_forecasts (test_research.ResearchTests.test_scenario_means_and_volatility_match_forecasts) ... ok\ntest_seed_reproducibility (test_research.ResearchTests.test_seed_reproducibility) ... ok\ntest_sequence_models_have_two_output_heads (test_research.ResearchTests.test_sequence_models_have_two_output_heads) ... ok\ntest_target_uses_next_five_days (test_research.ResearchTests.test_target_uses_next_five_days) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.415s\n\nOK\n"
+}
